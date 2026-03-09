@@ -11,14 +11,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Bahiana&display=swap" rel="stylesheet">
 
 <style>
-/* Reset dasar */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Body full screen, flex center */
 body {
     min-height: 100vh;
     display: flex;
@@ -31,7 +29,6 @@ body {
     position: relative;
 }
 
-/* Overlay hitam */
 .overlay {
     position: absolute;
     top:0;
@@ -42,7 +39,6 @@ body {
     z-index: 0;
 }
 
-/* Container konten */
 .container {
     position: relative;
     z-index: 1;
@@ -53,7 +49,6 @@ body {
     align-items: center;
 }
 
-/* Foto profil */
 .container img {
     width: 120px;
     height: 120px;
@@ -61,7 +56,6 @@ body {
     margin-bottom: 15px;
 }
 
-/* Judul */
 .container h2 {
     font-family:'Bahiana', cursive;
     color: rgb(253, 215, 0);
@@ -69,7 +63,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Separator */
 .separator {
     width: 30%;
     height: 2px;
@@ -78,45 +71,38 @@ body {
     border-radius: 1px;
 }
 
-/* Tombol */
 .link {
     display: block;
     width: 100%;
-    padding: 12px 0;
+    padding: 12px 0; /* tombol proporsional */
     margin: 10px 0;
     border-radius: 10px;
     text-decoration: none;
     font-family: 'Bahiana', cursive;
-    font-size: clamp(16px, 4vw, 24px); /* font responsive tetap nyaman dibaca */
+    font-size: 18px; /* font pas, nggak terlalu kecil */
     transition: 0.2s;
     color: white;
 }
 
-/* Warna tombol */
 .saweria { background: #272727; }
 .tiktok { background: #081bbd; }
 .instagram { background: #8914d6; }
 .youtube { background: #b60211; }
 
-/* Hover tombol */
 .saweria:hover { background:#f5dd02; transform: scale(1.05); }
 .tiktok:hover { background:#00a2ff; transform: scale(1.05); }
 .instagram:hover { background:#df3dff; transform: scale(1.05); }
 .youtube:hover { background:#ff2b2b; transform: scale(1.05); }
 
-/* Media query untuk HP kecil */
 @media (max-width: 480px) {
     body {
         background: url('asligaya-portrait.jpg') center center / cover no-repeat;
     }
 
     .container h2 { font-size: 12vw; }
-    .link {
-        padding: 18px 0;   /* tombol lebih tebal */
-        border-radius: 12px;
-    }
     .container img { width: 100px; height: 100px; }
     .separator { width: 40%; }
+    .link { font-size: 20px; padding: 14px 0; } /* pas untuk HP */
 }
 </style>
 </head>
