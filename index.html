@@ -134,14 +134,17 @@ background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
 box-shadow:0 0 12px #e45eff;
 }
 .youtube{background:#9c9c9c;}
-.facebook{background:#9c9c9c;}
+.facebook{background:#076ff7;}
 
 .saweria:hover{background:#f5dd02;transform:scale(1.05);}
 .tiktok:hover{background:#00ffea;transform:scale(1.05);}
 .instagram:hover{background:#df3dff;transform:scale(1.05);}
+.facebook:hover{background:#07abf7;transform:scale(1.05);}
 
 .youtube:hover{background:#666;}
-.facebook:hover{background:#666;}
+.facebook:hover{
+  box-shadow:0 0 12px #39c0ff;
+}
 
 .saweria{width:40%;}
 
@@ -220,7 +223,7 @@ opacity:1;
 
 <a class="link youtube" href="#">YouTube</a>
 
-<a class="link facebook" href="#">Facebook</a>
+<a class="link facebook" href="https://www.facebook.com/profile.php?id=61582713190999">Facebook</a>
 
 </div>
 
@@ -230,7 +233,7 @@ COMING SOON!
 
 <script>
 
-const disabledButtons=document.querySelectorAll('.youtube,.facebook');
+const disabledButtons=document.querySelectorAll('.youtube');
 const msg=document.getElementById('comingsoon');
 
 disabledButtons.forEach(button=>{
